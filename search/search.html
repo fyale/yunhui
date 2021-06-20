@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv= "Content-Type" content="text/html; charset=utf-8" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="480" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="initial-scale=1.0,width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <title>搜索</title>
+    <script type="text/javascript" src="../assets/rem.js"></script>
+    <link rel="stylesheet" href="../css/jquery.bigautocomplete.css" type="text/css" />
+    <link rel="stylesheet" href="../css/search.css" type="text/css" />
+</head>
+
+<body>
+<div class="outout">
+	<div class="head_search_box">
+			<!-- <div class="ic_back"><a href = "../index.html"><img src="../images/icon/ic_back.png" alt=""></a></div> -->
+			<input class="head_search_input" type="text" id="searchtext" onkeydown="entersearch()" autofocus="autofocus" maxlength="50"/>
+			<div class="head_searchBtn" onclick="search()">
+			  <div class="head_searchBtn_glass">
+				<img src="../images/icon/s1.png"/>
+			  </div>
+			</div>
+	<div class="head_searchClear" style="display:block"><img src="../images/icon/s2.png"/></div>
+	<div class="tishi_out">
+		<div class="tishi">
+			<img src="../images/icon/s3.png" >
+			<div class="tishi_top">没有符合条件的内容</div>
+			<!-- <div class="tishi_bot">确定</div> -->
+		</div>
+	</div>
+	</div>
+</div>
+<div class="shade"></div>
+<script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="../js/jquery.bigautocomplete.js"></script>
+<script type="text/javascript" src="../js/text.js"></script>
+<script type="text/javascript" src="../js/search.js"></script>
+</body>
+</html>
