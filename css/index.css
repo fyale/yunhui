@@ -1,0 +1,740 @@
+/* 模拟手机Galaxy S5 即屏宽度为360 &&360*4=1440*/
+html, body, div, span, h1, h2, h3, p, em, img, q, strong, ol, ul, li,table, tbody, tfoot, thead, tr, th, td, section {margin:0;padding:0;outline:none;}
+body {
+	position: relative;
+	-webkit-user-select: auto; 
+	-webkit-text-size-adjust: 100%;
+	word-wrap: break-word;
+	line-height:1.5;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	color:#333;
+	font-size: .64rem;
+}
+input{
+    border: none;
+    outline: none;
+}
+a{
+	color: #333;
+	text-decoration:none;
+	-webkit-tap-highlight-color: transparent;
+}
+img{
+	border: 0;
+	max-width: 100%;
+	vertical-align: middle;
+}
+h2{
+	font-size: .64rem;
+}
+/* 首页开始 */
+.index-cont{
+	padding: 0 .64rem;
+}
+.index-cont li,
+.cont01 li,
+.cont02 li,
+.cont03 li{
+	list-style: none;
+}
+.uicontrol{
+	font-weight: bold;
+}
+.center{
+	text-align: center;
+}
+/*搜索开始*/
+.head_search_box{
+	position: relative;
+	border-radius: .12rem;
+	width: 90%;
+	height: 1.28rem;
+	border-radius: 1.6rem;
+	margin: .4rem 0 .4rem;
+	overflow: hidden;
+}
+.head_search_box input{
+	width: 100%;
+	height: 1.28rem;
+	margin: 0 auto;
+	border: 0;
+	border-radius: 1.6rem;
+	color: #bdbdbd;
+	background: #f2f2f2;
+	outline:none;
+	padding-left: 1.2rem;
+	font-size: .56rem;
+}
+.head_searchBtn{
+	position: absolute;
+	left: .4rem;
+	top:.11rem;
+}
+.head_searchBtn img{
+	width: .56rem;
+    height: .56rem;
+}
+ .share{
+	position: absolute;
+	top:.16rem;
+	right: 20px;
+	width: .96rem;
+	height: .96rem;
+	background-image: url(../images/12.png);
+	background-size: contain;
+}
+/*搜索结束*/
+/* 轮播图开始 */
+.swiper-container {
+	width: 100%;
+	padding-top: .4rem;
+    padding-bottom: .4rem;
+    /* background: linear-gradient(to top,#ebe5fc,#dddafa); */
+  }
+  .swiper-slide {
+      width: 60%;
+  }
+  .swiper-slide-active{
+      width: 61.5%;
+      margin: 0 3%;
+  }
+  .swiper-slide-prev,
+  .swiper-slide-next {
+      width: 56%;
+      margin-top: 3.2%;
+  }
+  .swiper-slide img{
+    border-radius: 4%; 
+  }
+
+/* 轮播图结束 */
+ .index-cont-p {
+	font-size: .72rem;
+	font-weight: bold;
+    margin-top: 0.8em;
+    margin-bottom: 0.5em;
+}
+/* 使用指导开始 */
+.index-cont-p.p1{
+    margin-bottom: .64rem;
+    margin-top: .64rem;
+}
+.cont01 {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	text-align: center;
+}
+.cont01 li {
+	float: left;
+	width: 33.3333%;
+	height: 4.12rem;
+	padding: .2rem;
+	box-sizing: border-box;
+	font-size: .48rem;
+}
+.cont01 li img {
+	display: block;
+	width: 1.6rem;
+	margin: 0 auto;
+}
+.cont01 li p{
+	display: inline-block;
+	text-align:center;
+	margin: .32rem 0;
+	overflow: hidden;
+ 	position: relative;
+    box-sizing: border-box;
+
+}
+.cont01 li p.over{
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+}
+/* 使用指导结束 */
+/* 热门问题单个 cont02 开始*/
+#jd-content .cont02{
+	position: relative;
+	font-size: .64rem;
+    padding: 0.9em 0;
+    margin: 0;
+	list-style: none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+#jd-content .cont02:last-child {
+    border-bottom: none;
+}
+#jd-content .cont02 a{
+	display: inline-block;
+	box-sizing: border-box;
+	width: 100%;
+	padding-right: .96rem;
+}
+
+/* 热门问题单个 cont02 结束*/
+/* 热门问题多个列表 cont03 开始*/
+.cont03 {
+    position: relative;
+	padding: 1.1em 0;
+    list-style: none;
+    line-height: 100%;
+    margin-left: 1.52rem;
+   /* margin-left: 38px; */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.cont03>img{
+    position: absolute;
+    width: .96rem;
+    height: .96rem;
+    left: -1.28rem;
+}
+.cont03:last-child{
+    border-bottom:none;
+}
+.cont03 h3,
+.cont04 h4{
+	position: relative;
+	font-weight: normal;
+    font-size: .64rem;
+    padding:0.3em 0;
+    padding-right: .96rem;
+   
+}
+.cont03 h3 span ,
+.cont02 span,
+.cont04 h4 span{
+	position: absolute;
+	top: 50%;
+	right: 3%;
+	width: .32rem;
+	height: .32rem;
+	display: inline-block;  
+	border-top: 1px solid ;
+	border-right: 1px solid;  
+	transform: rotate(45deg) translateY(-50%);
+}
+.cont03 h3 span.act,
+.cont04 h4 span.act{
+	transform: rotate(135deg) translateX(-50%);
+}
+.cont03 .ul,
+.cont04 ul{
+	display: none;
+}
+.cont04 ul {
+    padding-left: 10%;
+}
+.cont03 .ul li,
+.cont04 h4{
+	font-size: .56rem;
+	margin: 1.2em 0;
+}
+.cont03 .ul li a{
+    line-height: 1.5em;
+}
+.cont03 .ul .note li{
+	list-style: disc;
+}
+.cont03 .ul .note ul{
+	padding-left: 1.15rem;
+}
+/* 热门问题多个列表 cont03 结束*/
+/* 首页结束 */
+#jd-content table { 
+    width: 100%;
+    table-layout: fixed;
+    word-wrap:break-word;
+}
+.topictitle1{
+	position: relative;
+	font-size: .72rem;
+	font-weight: bold;
+	margin-bottom: .8rem;
+}
+.margin0{
+	margin-bottom: 0;
+}
+.topictitle1 span {
+    position: absolute;
+    left: 5%;
+    top: 16%;
+    font-size: .72rem;
+    color: #ffffff;
+}
+.topictitle1 img {
+	border-radius: .32rem;
+    width: 100%;
+    margin-bottom: .8rem;
+}
+.topictitle1 span#tip{
+	top: 52%;
+	font-size: .48rem;
+
+}
+#jd-content{
+	padding: 16px;
+	box-sizing: border-box;
+}
+@media screen and (min-width:360px){
+	#jd-content{
+		padding: 24px;
+		box-sizing: border-box;
+	}
+}
+#jd-content .cont03 h3 {
+	padding-left: 0;
+}
+#jd-content p, 
+#jd-content li {
+	margin: 0.8em 0;
+}
+
+#jd-content ul,
+#jd-content ol,
+#jd-content ul ul,
+#jd-content ul ol,
+#jd-content ol ol {
+	padding-left: .8rem;
+}
+#jd-content .ullinks{
+	padding-left: .2rem;
+}
+#jd-content .topictitle2{
+    position: relative;
+    font-size: .72rem;
+    font-weight: bold;
+    margin-bottom: .4rem;
+    padding-left: .2rem;
+}
+ol ul,
+ul ul {
+	list-style-type: disc;
+}
+.notespanimage>img {
+	width:1rem;
+	margin-top: 0.8em;
+}
+.note {
+    padding: .4rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
+	background-color: #F7F7F7;
+	border-radius: .4rem;
+}
+.note > span {
+    float: left;
+}
+.note>p {
+	padding-left: 1.2rem;
+}
+.note p,
+.note li,
+.note p strong,
+.note li strong{
+	font-size: .56rem;
+	margin: 0.8em 0;
+}
+table th,
+table td{
+	vertical-align: middle;
+    text-align: left;
+    padding: 2%;
+}
+.section2 {
+    margin-bottom: .8rem;
+}
+
+
+/* 点赞吐槽开始 */
+
+.comment-button {
+    text-transform: uppercase;
+	height: .1.12rem;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: 900;
+    font-family:'HWText-Medium', 'Roboto-Medium', 'SmartZawgyi';
+}
+.comment-button .versionControl {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-basis: auto;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+    overflow: hidden;
+    font-size: .52rem;
+    height: 1.12rem;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+[dir="rtl"] .comment-button .icon {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+[dir="rtl"] .comment-button {
+    margin-right: 0;
+    margin-left: 16px;
+}
+[dir="rtl"] .comment-button .text {
+    unicode-bidi: bidi-override !important;
+    direction: rtl !important;
+}
+.comment-button .icon {
+    font-size: .7rem!important;
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family:'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-top: .1rem;
+}
+.comment-button .icon:before {
+    content:"\e90a";
+}
+.comment-button .change-text {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /* text-indent: 4px; */
+    margin-right: .19rem;
+}
+/* .comment-button.did .icon:before {
+    content:"\e90b";
+} */
+
+.darkMode .praise {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #3F97E9;
+}
+.praise {
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-content: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    color: #007DFF;
+    height: 1.12rem;
+    text-transform: uppercase;
+    font-size: .52rem;
+    font-weight: 900;
+    font-family:'HWText-Medium', 'Roboto-Medium', 'SmartZawgyi';
+}
+.praise .change-text {
+    white-space: nowrap;
+    /* text-indent: .16rem; */
+    margin-right: .19rem;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /* max-width: 18em; */
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+.praise .icon {
+    font-size: .7rem!important;
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family:'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-top: -0.08rem;
+}
+.praise .icon:before {
+    content:"\e90a";
+}
+[dir="rtl"] .praise {
+    margin: 0 0 0 16px;
+}
+/* .praise.did .icon:before {
+    content:"\e90b";
+} */
+[dir="rtl"] .praise .icon {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('./fonts/icomoon.eot?382bta');
+    src:  url('./fonts/icomoon.eot?382bta#iefix') format('embedded-opentype'),
+      url('./fonts/icomoon.ttf?382bta') format('truetype'),
+      url('./fonts/icomoon.woff?382bta') format('woff'),
+      url('./fonts/icomoon.svg?382bta#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+.iconfont {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family:'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.function-block {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    /* min-height: 48px; */
+    /*position: absolute;*/
+    bottom: 0rem;
+    /* z-index: 30; */
+    width: 2.81rem;
+    height: 1.12rem;
+    background: #F9F9F9;
+	border-radius: .6rem;
+    display: inline-block;
+    margin-right: .32rem;
+    border: 1px solid #fff;
+}
+.function-block-item {
+   
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.comment-button{
+color: #007DFF;
+
+}
+.function-block a span{
+    color:  #268FFF!important;;
+}
+/*评价弹框开始 */
+.EvaluationArea{
+    margin:  1.2rem 0 .96rem 0;
+}
+.hide{
+    display: none;
+}
+.mask{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.2);
+    z-index: 2;
+}
+.mask .tip{
+    position: absolute;
+    bottom: 5.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: .56rem;
+    border-radius: .72rem;
+    box-sizing: border-box;
+    padding: .33rem .64rem;
+    text-align: center;
+    background-color: rgba(217,217,217,0.95);
+    color: #000;
+}
+.evaluate{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    border-top-left-radius: .32rem;
+    border-top-right-radius: .32rem;
+    padding: 0 .94rem;
+    border: 1px solid #fff;
+    border-bottom: none;
+    box-sizing: border-box;
+    z-index: 3;
+}
+.font{
+    width: 100%;
+    height: .96rem;
+    font-size: .96rem;
+    line-height: .96rem;
+    text-align: center;
+    font-family: 'icomoon' !important;
+   
+}
+.font:before{
+    content:"\e90c";
+    opacity: 0.3;
+}
+.evaluateHead{
+    font-size: .8rem;
+    margin-top: .64rem;
+    margin-bottom: .8rem;
+    font-weight: bold;
+}
+.evaluateContent{
+    width: 100%;
+    min-height: 5.6rem;
+    overflow-x: hidden;
+    overflow-y:auto;
+
+}
+.evaluateContent span {
+    float: left;
+    padding: .2rem;
+    margin:  .24rem 0;
+    margin-right: .32rem;
+    font-size: .48rem;
+    background-color:#F9F9F9;
+    border-radius: .56rem;
+    border: 1px solid #fff;
+}
+.evaluateContent span.color{
+    background-color: #c4e0fa;
+}
+
+.evaluateContent .Comment{
+    float: left;
+    box-sizing: border-box;
+    width: 100%;
+    background-color:#F9F9F9;
+    /* background-color: red; */
+    border-radius: .56rem; 
+    margin-top: .4rem;
+    padding: .2rem .36rem;
+    font-size: .56rem;
+    max-height: 1.8rem;
+    line-height: 1.5em;
+    overflow-x: hidden;  
+    overflow-y: auto; 
+    border: 1px solid #fff; 
+}
+.evaluateContent .Comment:empty:before{
+    content: attr(placeholder);   /* element attribute*/
+    /*content: 'this is content';*/
+    /* color:#red; */
+}
+/*焦点时内容为空*/
+.evaluateContent .Comment:focus:before{
+    content:none;
+}
+
+.result{
+    padding: .4rem 0;
+    font-size: .64rem;
+    position: relative;
+}
+.result span {
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+    border-right: 1px solid  rgba(0, 0, 0, 0.05);
+    color: #007DFF;
+}
+.result span.submit {
+    border-right:none;
+    /* opacity: 0.3; */
+}
+.disable{
+    border-right: none!important;
+    position: absolute;
+    top: 0;
+    right: 0.8rem;
+    height: 1.6rem;
+    width: 40%!important;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.disable.hide{
+    display:none;
+}
+.band {
+    overflow: hidden;
+}
+/* 点赞、吐槽结束 */
